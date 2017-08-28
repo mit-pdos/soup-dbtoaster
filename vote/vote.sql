@@ -1,8 +1,8 @@
-CREATE TABLE art (id int, title varchar(16))
+CREATE STREAM art (id int, title varchar(16))
     FROM FILE 'art.csv' LINE DELIMITED
     CSV (fields := ',');
 
-CREATE TABLE vt (u int, id int)
+CREATE STREAM vt (u int, id int)
     FROM FILE 'vt.csv' LINE DELIMITED
     CSV (fields := ',');
 
