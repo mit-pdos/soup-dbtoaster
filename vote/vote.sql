@@ -6,6 +6,6 @@ CREATE STREAM vt (u int, id int)
     FROM FILE 'vt.csv' LINE DELIMITED
     CSV (fields := ',');
 
-SELECT art.id AS id, art.title AS title, COUNT(*) AS votes
+SELECT vt.id AS id, art.title AS title, COUNT(*) AS votes
     FROM art JOIN vt ON art.id = vt.id
-    GROUP BY art.id, art.title;
+    GROUP BY vt.id, art.title;
