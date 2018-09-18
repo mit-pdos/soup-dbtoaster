@@ -13,3 +13,4 @@ for j in $(seq 500); do
 	done;
 done
 shuf -o "${dir}/vt.csv" "${dir}/vt-ord.csv"
+rm "${dir}/vt-ord.csv"
