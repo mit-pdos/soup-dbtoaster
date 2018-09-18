@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="http://web.archive.org/web/20161011041048/http://www.dbtoaster.org/dist/dbtoaster_ubuntu14.04_x86_64_3387.tgz"
+URL="https://dbtoaster.github.io/dist/dbtoaster_linux_3387.tgz"
 
 wget ${URL} -O dbtoaster.tar.gz
 tar -xvzf dbtoaster.tar.gz
