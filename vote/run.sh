@@ -5,4 +5,4 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(dir)/../dbtoaster/lib/dbt_c++/libdbt
 
 ${dir}/../dbtoaster/bin/dbtoaster -O3 vote.sql -c vote
 
-/bin/time -v ./vote -n
+/usr/bin/time -v ./vote -n
